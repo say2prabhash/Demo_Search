@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <div id="notification-container">
+    </div>
+    <div id="logo-container">
+    <img src="expedialogo.png" alt="Expedia">
+    </div>
+    <div id="main-container">
+        <div id="parent-container">
+       
+            <div id="flight-child-container">
+                <div id="button-container">
+                    <button class="category-buttons" id="flights">Flights</button>
+                    <button class="category-buttons" id="hotels">Hotel</button>
+                </div>
+                <div id="trip-button-flex">
+                    <button id="oneWay">One-way</button>
+                    <button id="return">Round</button>
+                </div>
+                <form>
+                <div class="flight-info-input-text">
+                    <div id="text-info-flex">
+                        <p class="text-info">Flying From</p>
+                        <p class="text-info">Flying To</p>
+                    </div>
+                </div>
+                <div class="input-box">
+                    <input id="flyingFrom" class="input-box-dimension" type="text">
+                    <input id="flyingTo" class="input-box-dimension" type="text">
+                </div>
+                <div  class="departure-info-input-text">
+                    <div id="departure-info-flex">
+                          <p class="text-info">Adults(18+)</p>
+                        <p class="text-info">Children(0-17)</p>
+                        <p id="departure-text" class="text-info">Departing</p>
+                        <p id="return-text" class="text-info">Returning</p>
+                    </div>
+                </div>
+                <div id="departure-input-box">
+                    <select id="adults">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                    </select>
+                    <select id="childrenOnFlight">
+                        <option value="0">0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                    </select>
+                    <input id="departing" class="datepicker" value="mm/dd/yyyy" type="text">
+                    <input id="returning" class="datepicker" value="mm/dd/yyyy" type="text">
+                </div>
+                <div id="submit-flex">
+                    <input id="flightSubmit" type="button" value="Submit" name="submitButton">
+                </div>
+                </form>
+                <!--  <video poster="https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/polina.jpg" id="bgvid" playsinline autoplay muted loop>
+                <source src="http://thenewcode.com/assets/videos/polina.webm" type="video/webm">
+                <source src="http://thenewcode.com/assets/videos/polina.mp4" type="video/mp4"> -->
+        </video>
+            </div>
+             <div id="hotel-child-container">
+                               <div id="button-container">
+              
+                    <button class="category-buttons" id="flights">Flights</button>
+                    <button class="category-buttons" id="hotels">Hotel</button>
+                  
+                </div>
+                <form>
+                <div class="info-input-text">
+                    <div id="text-info-flex">
+                        <p class="text-info">Going To</p>
+                    </div>
+                </div>
+                <div class="input-box">
+                    <input id="goingTo" class="input-box-dimension" type="text">
+                </div>
+                <div  class="departure-info-input-text">
+                    <div id="hotel-info-flex">
+                        <p id="check-in-text" class="text-info">Check-in</p>
+                        <p id="check-out-text" class="text-info">Check-out</p>
+                        <p id="room" class="text-info">Rooms</p>
+                    </div>      
+                </div>
+                <div id="hotel-input-box">
+                    <input id="checkIn" class="datepicker" value="mm/dd/yyyy" type="text">
+                    <input id="checkOut" class="datepicker" value="mm/dd/yyyy" type="text">
+                     <select id="rooms">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                    </select> 
+                </div>
+                <div id="rooms-info">
+                <div id="room-info-flex">
+                        <p id="adultsText" class="text-info">Adults(18+)</p>
+                        <p id="childenText" class="text-info">Children(0-17)</p>
+                        </div>
+                    <div id="room-input-box">
+                    <select id="adults">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                    </select>
+                    <select id="children">
+                        <option value="0">0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                    </select>
+                
+                    </div>
+                    </div>
+                <div id="submit-flex">
+                     <input id="hotelSubmit" type="button" value="Submit" name="submitButton">
+            </div>
+                </form>
+                 <!-- <video poster="https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/polina.jpg" id="bgvid" playsinline autoplay muted loop>
+                <source src="https://www.youtube.com/watch?v=Rrw4eRzWBX4" type="video/webm">
+                <source src="https://www.youtube.com/watch?v=Rrw4eRzWBX4" type="video/mp4">
+        </video> -->
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script type="text/javascript" src="expedia-assignment.js"></script>
+</body>
+</html>
