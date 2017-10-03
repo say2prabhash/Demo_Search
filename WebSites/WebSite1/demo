@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+<head>
+</head>
+<body>
+    <table>
+        <tr>
+            <td><label id="From"/>From : </td>
+            <td><input id="TxtFrom"></td>
+        </tr>
+        <tr>
+            <td><label id="To"/>To : </td>
+            <td><input id="TxtTo" required="required"></td>
+        </tr>
+        <tr>
+            <td><label id="To" />Body : </td>
+            <td><textarea id="TxtBody" required="required" 
+
+            rows="10" cols="30"></textarea></td>
+        </tr>
+        <tr>
+            <td/>
+            <td style="align-content:flex-end">
+                <button onclick="loadJsonData();">Send Data to the Server</button>
+            </td>
+        </tr>
+</table>  
+<script type="text/javascript" src="demo.js"></script>
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>   
+</body>
+</html>
